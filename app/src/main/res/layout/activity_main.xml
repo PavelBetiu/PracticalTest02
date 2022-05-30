@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="SERVER"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <EditText
+        android:id="@+id/ServerPortEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Server PORT" />
+
+    <Button
+        android:id="@+id/StarServerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartServer"
+        />
+
+    </LinearLayout>
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="30dp"
+    android:text="Client"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/ClientConnectAddressEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="IP Address" />
+
+        <EditText
+            android:id="@+id/ClientConnectPortEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Port" />
+
+        <EditText
+            android:id="@+id/ClientRequestDataEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Request Datas" />
+
+        <Button
+            android:id="@+id/SendRequestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SendRequest"
+            />
+
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/resultEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="" />
+
+
+</LinearLayout>
